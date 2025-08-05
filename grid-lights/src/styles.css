@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 50px); /* 3 columns of 50px each */
+  grid-template-rows: repeat(3, 50px); /* 3 rows of 50px each */
+  gap: 8px; /* space between cells */
+  justify-content: center; /* center grid horizontally */
+  margin-top: 40px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid #444;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cell.active {
+  background-color: green;
+  cursor: default;
+}
+
+.empty-cell {
+  width: 50px;
+  height: 50px;
+  visibility: hidden; /* reserves space, but invisible */
+}
